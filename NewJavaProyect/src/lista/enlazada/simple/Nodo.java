@@ -10,6 +10,12 @@ public class Nodo {
         this.dato = elemento;
     }
 
+    // metodos
+    public void FreeNodo(Nodo n){
+        n.setSiguiente(null);
+    }
+
+
     // getters and setters
     public int getDato() {
         return dato;
@@ -26,7 +32,5 @@ public class Nodo {
     public void setSiguiente(Nodo siguiente) {
         this.siguiente = siguiente;
     }
-    public void FreeNodo(Nodo n){
-        n.setSiguiente(null);
-    }
+
 }
