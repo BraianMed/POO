@@ -6,8 +6,9 @@ public class Nodo {
     private Nodo siguiente;
 
     // constructor
-    Nodo(int elemento){
+    public Nodo(int elemento){
         this.dato = elemento;
+        //this.siguiente = null;
     }
 
     // metodos

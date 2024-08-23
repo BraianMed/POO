@@ -11,11 +11,14 @@ public class Main {
         lista.AppendElement(lista,14);
         lista.AppendElement(lista,15);
         lista.PrintElements();
+        System.out.println("cantidad luego de agregar: " + lista.getCantidad());
 
         lista.DeleteElements(lista,3);
         System.out.println("Lista luego de eliminar elementos: \n");
 
         lista.PrintElements();
+        System.out.println("cantidad luego de eliminar: " + lista.getCantidad());
+
 
         lista.InsertElements(lista,1,29);
         lista.InsertElements(lista,3,57);
@@ -23,7 +26,8 @@ public class Main {
         System.out.println("Luego de insertar elementos: \n");
         lista.PrintElements();
 
-        System.out.println("la cantidad de elementos que tiene la lista es de: " + lista.getCantidad() );
+        System.out.println("cantidad luego de insertar: " + lista.getCantidad());
+        
 
     }
 }

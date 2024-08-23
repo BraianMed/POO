@@ -25,6 +25,7 @@ public class ListaEnlazadaSimple {
         Nodo nuevo_nodo = new Nodo(dato);
         if (lista.isEmpty()){
             inicio = nuevo_nodo;
+            lista.cantidad++;
             return;
         }
         Nodo actual = this.inicio;
