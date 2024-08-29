@@ -47,12 +47,14 @@ public class Biblioteca {
     }
 
     public void MostrarPrestamos(){
+        System.out.println("Prestamos efectuados en la biblioteca!");
         for (Prestamo prestamo : prestamos) {
             prestamo.MostrarPrestamo();
         }
     }
 
     public void MostrarLibros(){
+        System.out.println("Libros existentes en la biblioteca!");
         for (Libro libro : libros) {
             libro.MostrarLibro();
         }
