@@ -14,7 +14,7 @@ public class Tarea {
     // constructor
     public Tarea(String descripcion,Prioridad prioridad){
         this.descripcion = descripcion;
-        this.prioridad = prioridad;
+        cambiarPrioridad();
         this.estado = false;
     }
 
@@ -52,7 +52,7 @@ public class Tarea {
     public void MostrarTarea(){
         System.out.println("Descripcion : " + descripcion);
         System.out.println("Prioridad : " + prioridad);
-        System.out.println("Estado : " + (estado == false ? "No finalizada" : "Finalizada"));
+        System.out.println("Estado : " + (!estado ? "No finalizada" : "Finalizada"));
         System.out.println("Fecha de vencimiento : " + vencimiento);
 
     }
