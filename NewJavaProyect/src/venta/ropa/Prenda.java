@@ -9,7 +9,7 @@ public class Prenda {
         return precioLista + porcentaje;
     }
     public double calcularPrecio(Tarjeta tarjeta){
-        return tarjeta.aplicarDescuento(calcularPrecio());
+        return tarjeta.aplicarDescuento(this.calcularPrecio());
     }
     public double getPrecioLista() {
         return precioLista;
@@ -18,4 +18,5 @@ public class Prenda {
     public String getTalle() {
         return talle;
     }
+
 }
